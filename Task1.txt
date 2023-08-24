@@ -1,0 +1,48 @@
+Открыть домашнюю директорию
+cd ~
+Определить имя папки, в которой вы находитесь
+pwd
+Создать внутри этой папки каталог  с именем test1
+mkdir test1 
+Перейти в папку test1
+cd ./test1 
+Создать файл 1,2 и 3 внутри каталога test1
+touch 1.txt 
+ touch 2.txt 
+touch 3.txt
+Проверить содержимое каталога test1
+ls -l 
+Перейти в домашнюю директорию
+cd ~   
+Создать папку test2 внутри домашней директории
+ mkdir test2
+Удалить папку test2
+rm -r test2
+Удалить файл 2 из папки test1
+rm  ./test1/2.txt
+Создать папку в домашней директории test3 и добавить в нее два файла
+mkdir test3 
+cd test3   
+touch 1.txt
+touch 2.txt
+Удалить папку test3
+rm -r test3
+Создать папку test4 в домашней директории
+mkdir test4
+Переместить файлы 1 и 3 из папки test1 в папку test4
+cp ./test1/1.txt  ./test4
+cp ./test1/3.txt  ./test4
+Добавить в файл 1 три строки со словами line
+   echo line > test4/1.txt
+  echo line >> test4/1.txt
+  echo line >> test4/1.txt
+Посмотреть содержимое файла 1
+cat ./test4/1.txt
+Добавьте в файл 3 три строки со словами line
+   echo line > test4/3.txt
+  echo line >> test4/3.txt
+  echo line >> test4/3.ditxt
+Просмотрите содержимое двух файлов (1 и 3) сразу
+ cat test4/1.txt test4/3.txt
+Используя один из редакторов замените все строки в файле 1
+	nano ./test4/1.txt 
